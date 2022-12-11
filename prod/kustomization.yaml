@@ -1,0 +1,23 @@
+resources:
+- ../base
+namespace: prod
+namePrefix: prod-
+
+patches:
+- path: deployment.yaml
+  target:
+    kind: Deployment 
+    name: myflask
+- path: service.yaml
+  target:
+    kind: Service
+    name: myflask-svc
+    version: v1
+
+
+# patchesJson6902:
+#   - target:
+#       version: v1
+#       kind: Service
+#       name: myflask-svc
+#     path: service.yaml

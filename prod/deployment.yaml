@@ -1,0 +1,10 @@
+kind: Deployment
+apiVersion: v1
+metadata:
+  name: myflask
+  namespace: prod-myflask
+
+spec:
+  strategy:
+    rollingUpdate.maxUnavailable: 25%
+  revisionHistoryLimit: 8

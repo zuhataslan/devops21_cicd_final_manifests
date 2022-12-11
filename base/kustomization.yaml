@@ -1,0 +1,11 @@
+commonLabels:
+  app: myflask
+
+resources:
+  - deployment.yaml
+  - service.yaml
+
+# configMapGenerator:
+#   - name: myflask-cm
+#     files:
+#       - default.env
