@@ -1,26 +1,10 @@
 resources:
 - ../base
-namespace: dev
-namePrefix: dev-
-# patchesJson6902:
-#   - target:
-#       kind: Service
-#       version: v1
-#       name: myflask-svc
-#     path: service.yaml
 
 patches:
-# - path: namespace.yaml
-#   target:
-#     kind: Namespace
-#     name: myflask
-- path: service.yaml
-  target:
-    kind: Service
-    version: v1
-    name: myflask-svc
 - path: deployment.yaml
   target:
     kind: Deployment
-    version: v1
-    name: myflask
+- path: service.yaml
+  target:
+   kind: Service
