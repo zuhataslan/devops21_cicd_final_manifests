@@ -17,9 +17,9 @@ spec:
   spec:
     containers:
       - name: myflask
+        image: ghcr.io/zuhataslan/devops21_cicd_final/my_flask
         ports:
           - name: myflask-port
-            image: ghcr.io/zuhataslan/devops21_cicd_final/my_flask
             containerPort: 5000
             protocol: TCP
 
