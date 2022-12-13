@@ -1,7 +1,5 @@
 resources:
 - ../base
-namespace: prod
-namePrefix: prod-
 
 patches:
 - path: deployment.yaml
