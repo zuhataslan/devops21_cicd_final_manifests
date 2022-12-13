@@ -3,8 +3,28 @@
   value: ghcr.io/zuhataslan/devops21_cicd_final/my_flask:latest
 
 - op: add
-  path: /spec/strategy/rollingUpdate/maxUnavailable
-  value: 25%
+  path: /minReadySeconds
+  value: 5
+
+- op: add
+  path: /spec/strategy
+  value:
+    'type': 'RollingUpdate'
+    'rollingUpdate':
+      'maxUnavailable': '25%'
+      'maxSurge': 1
+
+# - op: add
+#   path: /spec/strategy/1/rollingUpdate
+#   value: rollingUpdate
+
+# - op: add
+#   path: /spec/strategy/1/rollingUpdate/maxUnavailable
+#   value: 25%
+
+# - op: add
+#   path: /spec/strategy/1/rollingUpdate/maxSurge
+#   value: 1
 
 - op: add
   path: /spec/revisionHistoryLimit
