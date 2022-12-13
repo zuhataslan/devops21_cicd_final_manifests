@@ -4,9 +4,7 @@ resources:
 patches:
 - path: deployment.yaml
   target:
-    kind: Deployment 
+    kind: Deployment
 - path: service.yaml
   target:
-    kind: Service
-    name: myflask-svc
-    version: v1
+   kind: Service
