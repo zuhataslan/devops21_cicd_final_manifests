@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 
 metadata:
@@ -14,13 +14,13 @@ spec:
       labels:
         app: myflask
 
-  spec:
-    containers:
-      - name: myflask
-        image: ghcr.io/zuhataslan/devops21_cicd_final/my_flask
-        ports:
-          - name: myflask-port
-            containerPort: 5000
-            protocol: TCP
+    spec:
+      containers:
+        - name: myflask
+          image: ghcr.io/zuhataslan/my_flask
+          ports:
+            - name: myflask-port
+              containerPort: 5000
+              protocol: TCP
 
 

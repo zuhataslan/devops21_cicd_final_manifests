@@ -1,7 +1,7 @@
 - op: add
   path: /spec/ports/0/port
   value: 8080
-- op: replace
-  path: /metadata/namespace
-  value: dev-myflask
+# - op: replace
+#   path: /metadata/namespace
+#   value: dev-myflask
 
