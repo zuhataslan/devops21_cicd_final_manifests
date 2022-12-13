@@ -1,3 +1,3 @@
 - op: replace
   path: /spec/template/spec/containers/0/image
-  value: ghcr.io/zuhataslan/devops21_cicd_final/my_flask:sha-7adb1bc
+  value: ghcr.io/zuhataslan/devops21_cicd_final/my_flask:patch-v1.2.0
