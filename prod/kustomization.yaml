@@ -12,11 +12,3 @@ patches:
     kind: Service
     name: myflask-svc
     version: v1
-
-
-# patchesJson6902:
-#   - target:
-#       version: v1
-#       kind: Service
-#       name: myflask-svc
-#     path: service.yaml
