@@ -2,7 +2,6 @@ kind: Service
 apiVersion: v1
 
 metadata:
-  # namespace: myflask
   name: myflask-svc
 
 spec:

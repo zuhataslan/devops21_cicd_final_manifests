@@ -1,10 +1,11 @@
-kind: Deployment
-apiVersion: v1
-metadata:
-  name: myflask
-  namespace: prod-myflask
+- op: replace
+  path: /spec/template/spec/containers/0/image
+  value: ghcr.io/zuhataslan/devops21_cicd_final/my_flask:latest
 
-spec:
-  strategy:
-    rollingUpdate.maxUnavailable: 25%
-  revisionHistoryLimit: 8
+- op: add
+  path: /spec/strategy/rollingUpdate/maxUnavailable
+  value: 25%
+
+- op: add
+  path: /spec/revisionHistoryLimit
+  value: 8

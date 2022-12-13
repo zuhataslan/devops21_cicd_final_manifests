@@ -7,7 +7,6 @@ patches:
 - path: deployment.yaml
   target:
     kind: Deployment 
-    name: myflask
 - path: service.yaml
   target:
     kind: Service

@@ -1,7 +1,0 @@
-# - op: replace
-#   path: /metadata/name
-#   value: dev-myflask
-# kind: Namespace
-# apiVersion: v1
-# metadata:
-#   name: dev
